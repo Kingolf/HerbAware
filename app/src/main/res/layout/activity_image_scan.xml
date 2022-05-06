@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacgrnd_1"
+    tools:context=".ImageScanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtimgscantitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="ImageScan"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/txtimgscaninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtimgscantitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to ImageScan!!\n
+Here, you can know the species and some info\n
+of some plants by just taking or uploading an already\n
+existing image of the leaf of that plant."
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/btnimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/gradient_bg"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_camera"
+            android:layout_below="@id/txtimgscaninfo"
+            android:minWidth="200dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacgrnd_1"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TakePhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blue"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/txtopencam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnhome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="TAKE A PHOTO OF PLANT"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="256dp"
+            android:layout_height="192dp"
+            android:layout_below="@id/txtopencam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnopencam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_gradient"
+            android:padding="10dp"
+            android:text="Add image" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnpredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnopencam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green_gradient"
+            android:padding="10dp"
+            android:text="Predict" />
+
+
+        <TextView
+            android:id="@+id/txtviewprdct"
+            android:layout_width="250sp"
+            android:layout_height="70sp"
+            android:layout_below="@id/btnpredict"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:text="Prediction Here"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnreadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtviewprdct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/green_gradient"
+            android:padding="10dp"
+            android:text="Read more" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
