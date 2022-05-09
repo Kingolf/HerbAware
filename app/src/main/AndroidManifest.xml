@@ -50,9 +50,6 @@
             android:name=".ImageScanActivity"
             android:exported="false" />
         <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
             android:name=".CategoriesActivity"
             android:exported="false" />
         <activity

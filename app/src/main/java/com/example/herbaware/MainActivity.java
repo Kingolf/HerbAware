@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
     private CardView cardViewHome;
     private CardView cardViewCategory;
-    private CardView cardViewChat;
     private CardView cardViewImgScan;
     private CardView cardViewAbout;
     AppCompatButton logout;
@@ -64,13 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 Loginpage(); }
         });
 
-        //chat action
-        cardViewChat= findViewById(R.id.chatcv);
-        cardViewChat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openChatPage(); }
-        });
+
 
         //ImageScan action
         cardViewImgScan= findViewById(R.id.imgscancv);
@@ -106,11 +99,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //chat method
-    private void openChatPage() {
-        Intent intent = new Intent(this, ChatActivity.class);
-        startActivity(intent);
-    }
 
     //ImageScan method
     private void openImgScanPage() {
