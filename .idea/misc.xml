@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/drawable-v24/back_ic_2.xml" value="0.1505" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/drawable-v24/edt_bg.xml" value="0.1435" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/drawable-v24/gradient_bg.xml" value="0.121" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/drawable-xxxhdpi/green_gradient.xml" value="0.1435" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_admin_login.xml" value="0.25" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_categories.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_chat.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_diabetes_activity.xml" value="0.264" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_diabetes_avtivity.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_fever.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/app/src/main/res/layout/activity_hbpressure.xml" value="0.22826086956521738" />
@@ -37,11 +39,13 @@
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/drawable/edt_bg.xml" value="0.1435" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/drawable/gradient_bg.xml" value="0.1435" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_about.xml" value="0.25" />
-        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_add_plant.xml" value="0.25" />
+        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_add_plant.xml" value="0.2" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_admin_home_page.xml" value="0.25" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_admin_login.xml" value="0.25" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_plants.xml" value="0.25" />
         <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/Kwamena/AndroidStudioProjects/HerbAware/herbadmin/src/main/res/layout/test.xml" value="0.25" />
       </map>
     </option>
   </component>

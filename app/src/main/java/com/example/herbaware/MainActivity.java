@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         //CLICK ACTIONS
 
         //homepage click action
-        cardViewHome=(CardView) findViewById(R.id.homecv);
+        cardViewHome= findViewById(R.id.homecv);
         cardViewHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //category action
-        cardViewCategory=(CardView) findViewById(R.id.catcv);
+        cardViewCategory= findViewById(R.id.catcv);
         cardViewCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //logout
-        logout=(AppCompatButton) findViewById(R.id.btn_logout);
+        logout= findViewById(R.id.btn_logout);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //chat action
-        cardViewChat=(CardView) findViewById(R.id.chatcv);
+        cardViewChat= findViewById(R.id.chatcv);
         cardViewChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //ImageScan action
-        cardViewImgScan=(CardView) findViewById(R.id.imgscancv);
+        cardViewImgScan= findViewById(R.id.imgscancv);
         cardViewImgScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //About action
-        cardViewAbout=(CardView) findViewById(R.id.aboutcv);
+        cardViewAbout= findViewById(R.id.aboutcv);
         cardViewAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -28,10 +28,10 @@ public class CategoriesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categories);
 
         //linking to ids
-        cardViewImmuneB=(CardView) findViewById(R.id.catcvimmune);
-        cardViewDiabetes=(CardView) findViewById(R.id.catcvdiabetes);
-        cardViewFever=(CardView) findViewById(R.id.catcvfever);
-        cardViewHBP=(CardView) findViewById(R.id.catcvhbp);
+        cardViewImmuneB= findViewById(R.id.catcvimmune);
+        cardViewDiabetes= findViewById(R.id.catcvdiabetes);
+        cardViewFever= findViewById(R.id.catcvfever);
+        cardViewHBP= findViewById(R.id.catcvhbp);
 
         //Click Actions
 

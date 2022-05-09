@@ -30,7 +30,8 @@
             android:layout_below="@id/btnhome"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="TAKE A PHOTO OF PLANT"
+            android:text="Add Plant Image"
+            android:textColor="@color/green"
             android:textAlignment="center"
             android:textSize="26sp"
             android:textStyle="bold" />
@@ -52,36 +53,31 @@
             android:layout_below="@id/image_view"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:minWidth="250dp"
             android:background="@drawable/green_gradient"
+            android:onClick="pick_from_camera"
             android:padding="10dp"
-            android:text="Add image" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnpredict"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnopencam"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/green_gradient"
-            android:padding="10dp"
-            android:text="Predict" />
+            android:text="Open Camera" />
 
 
         <TextView
             android:id="@+id/txtviewprdct"
-            android:layout_width="250sp"
-            android:layout_height="70sp"
-            android:layout_below="@id/btnpredict"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/btnopencam"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginTop="15dp"
             android:background="@android:color/white"
+            android:fontFamily="serif"
             android:text="Prediction Here"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnreadmore"
+            android:id="@+id/btn_readmore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtviewprdct"
