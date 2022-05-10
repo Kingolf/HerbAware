@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.example.herbaware.databinding.ActivityPlantBinding;
 
@@ -19,23 +21,21 @@ public class PlantActivity extends AppCompatActivity {
 
         Intent intent = this.getIntent();
 
-       /** if (intent != null){
-
-            String name = intent.getStringExtra("name");
-            String botName = intent.getStringExtra("botName");
-            String about = intent.getStringExtra("about");
-            String prepare = intent.getStringExtra("prepare");
-            String hbenefits = intent.getStringExtra("health_benefits");
-            int imageid = intent.getIntExtra("imageid",R.drawable.leaf_img);
-
-            binding.plantProfile.setText(name);
-            binding.botanicProfile.setText(botName);
-            binding.aboutProfile.setText(about);
-            binding.healthbenProfile.setText(hbenefits);
-            binding.prepareProfile.setText(prepare);
-            binding.plantImage.setImageResource(imageid);**/
+        //back button
+        ImageButton back = findViewById(R.id.btn_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoBack();
+            }
+        });
 
 
         }
 
+    private void gotoBack() {
+        Intent intent = new Intent(this, HomePageActivity.class);
+        startActivity(intent);
     }
+
+}

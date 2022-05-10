@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class CategoriesActivity extends AppCompatActivity {
 
@@ -62,6 +63,20 @@ public class CategoriesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 openHBPPage(); }
         });
+
+        //back button
+        ImageButton back = findViewById(R.id.btn_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoBack();
+            }
+        });
+    }
+
+    private void gotoBack() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     //Methods For Actions

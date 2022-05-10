@@ -60,6 +60,14 @@ public class TakePhotoActivity extends AppCompatActivity {
         prediction = findViewById(R.id.txtviewprdct);
 
 
+        buttonHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoDashboard();
+            }
+        });
+
+
         btnOpenCamera.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
@@ -74,6 +82,11 @@ public class TakePhotoActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void gotoDashboard() {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
     public void predictImage(Bitmap imageBitmap){

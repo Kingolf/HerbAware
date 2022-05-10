@@ -28,6 +28,15 @@ public class ImageScanActivity extends AppCompatActivity {
 
         //CLICK ACTIONS
 
+        //back button
+        ImageButton back = findViewById(R.id.btn_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoBack();
+            }
+        });
+
         //homepage click action
 
         //Open Camera
@@ -47,5 +56,11 @@ public class ImageScanActivity extends AppCompatActivity {
             Intent intent = new Intent(this, TakePhotoActivity.class);
             startActivity(intent);
         }
+
+    //back button method
+    private void gotoBack() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
     }
