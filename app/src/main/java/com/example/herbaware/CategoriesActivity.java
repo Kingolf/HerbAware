@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
+import java.util.Objects;
+
 public class CategoriesActivity extends AppCompatActivity {
 
     private CardView cardViewImmuneB;
@@ -21,10 +23,10 @@ public class CategoriesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /** requestWindowFeature(Window.FEATURE_ACTION_BAR);
+        requestWindowFeature(Window.FEATURE_ACTION_BAR);
          this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
          WindowManager.LayoutParams.SOFT_INPUT_MASK_ADJUST);
-         Objects.requireNonNull(getSupportActionBar()).hide();**/
+         Objects.requireNonNull(getSupportActionBar()).hide();
 
         setContentView(R.layout.activity_categories);
 

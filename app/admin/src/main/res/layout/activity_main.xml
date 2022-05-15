@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/gradient_bg"
+            android:paddingStart="10dp"
+            android:src="@drawable/back_ic_2" />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_add_plant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:background="@drawable/bacgrnd_1">
+
+
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:text="Add Plant"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/plant_img"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/leaf_img"
+                    app:civ_border_color="#3f51b5"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#3f51b5"
+                    app:civ_shadow_radius="10dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plant_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gradient_bg"
+                    android:minWidth="100dp"
+                    android:text="Add Image"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/plant_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_add_image"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="Plant Name"
+                    android:inputType="text"
+                    android:minHeight="45dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+
+
+
+                <EditText
+
+                    android:id="@+id/bot_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plant_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="Botanical Name"
+                    android:inputType="text"
+                    android:minHeight="45dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+
+                <EditText
+
+                    android:id="@+id/dop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bot_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="Details on Plant"
+                    android:inputType="textMultiLine"
+                    android:minHeight="45dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/uses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dop"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="Medicinal Use"
+                    android:inputType="textMultiLine"
+                    android:minHeight="45dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+
+
+                <EditText
+
+                    android:id="@+id/risks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uses"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:drawablePadding="5dp"
+                    android:hint="Risks / Side Effects"
+                    android:inputType="textMultiLine"
+                    android:minHeight="45dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/categories_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/risks"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edt_bg"
+                    android:minHeight="45dp"
+                    android:padding="10dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categories_spinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gradient_bg"
+                    android:minWidth="180dp"
+                    android:text="Add Plant"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
